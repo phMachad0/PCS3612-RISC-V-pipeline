@@ -24,5 +24,5 @@ begin
                   s_slt when "101",
                   "--------------------------------" when others;
     
-    Zero <= '1' when ALUResult = "00000000000000000000000000000000";
+    Zero <= '1' when ALUResult = "00000000000000000000000000000000" else '0';
 end;

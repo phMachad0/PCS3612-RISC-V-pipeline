@@ -16,7 +16,10 @@ entity datapath is
         ReadData : in std_logic_vector(31 downto 0));
 end;
 architecture struct of datapath is
-    component flopr generic (width : integer);
+    component flopr
+        generic (
+            width : integer
+        );
         port (
             clk, reset : in std_logic;
             d : in std_logic_vector(width-1 downto 0);
@@ -27,17 +30,25 @@ architecture struct of datapath is
             a, b : in std_logic_vector(31 downto 0);
             y : out std_logic_vector(31 downto 0));
     end component;
-    component mux2 generic (width : integer);
+    component mux2
+    generic (
+        width : integer
+        );
         port (
             d0, d1 : in std_logic_vector(width-1 downto 0);
             s : in std_logic;
-            y : out std_logic_vector(width-1 downto 0));
+            y : out std_logic_vector(width-1 downto 0)
+        );
     end component;
-    component mux3 generic (width : integer);
+    component mux3
+    generic (
+        width : integer
+        );
         port (
             d0, d1, d2 : in std_logic_vector(width-1 downto 0);
             s : in std_logic_vector(1 downto 0);
-            y : out std_logic_vector(width-1 downto 0));
+            y : out std_logic_vector(width-1 downto 0)
+        );
     end component;
     component regfile
         port (

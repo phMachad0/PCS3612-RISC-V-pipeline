@@ -12,7 +12,7 @@ end;
 architecture behave of dmem is
     type ramtype is array (63 downto 0) of
     std_logic_vector(31 downto 0);
-    signal mem : ramtype;
+    signal mem : ramtype := (others => (others => '0'));
 
     begin
 	 

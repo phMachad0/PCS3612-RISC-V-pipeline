@@ -12,7 +12,7 @@ ENTITY regfile IS
 END;
 ARCHITECTURE behave OF regfile IS
     TYPE ramtype IS ARRAY (31 DOWNTO 0) OF STD_LOGIC_VECTOR(31 DOWNTO 0);
-    SIGNAL mem : ramtype;
+    SIGNAL mem : ramtype := (others => (others => '0'));
 BEGIN
     -- three ported REGISTER FILE
     -- read two ports combinationally (A1/RD1, A2/RD2)

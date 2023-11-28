@@ -29,7 +29,7 @@ architecture struct of riscvsingle is
 
     component datapath
         port (
-            clk, reset : inSTD_LOGIC;
+            clk, reset : in std_logic;
             ResultSrc : in std_logic_vector(1 downto 0);
             PCSrc, ALUSrc : in std_logic;
             RegWrite : in std_logic;

@@ -11,14 +11,18 @@ entity alu is
         );
 end;
 architecture behave of alu is
+    signal s_slt : std_logic_vector(31 downto 0);
 begin
+    s_slt <= "00000000000000000000000000000001" when signed(a) < signed(b) else "00000000000000000000000000000000";
+    
     with ALUControl select
     ALUResult <= std_logic_vector(signed(a) + signed(b)) when "000",
                   std_logic_vector(signed(a) - signed(b)) when "001",
                   a and b when "010",
                   a or b when "011",
                   a xor b when "100",
-                  std_logic_vector(signed(a) sll to_integer(unsigned(b))) when "101",
+                  s_slt when "101",
                   "--------------------------------" when others;
+    
     Zero <= '1' when ALUResult = "00000000000000000000000000000000";
 end;

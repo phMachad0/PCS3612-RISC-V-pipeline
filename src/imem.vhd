@@ -13,7 +13,7 @@ architecture behave of imem is
     std_logic_vector(31 downto 0);
     -- initialize memory from file
     impure function init_ram_hex return ramtype is
-        file text_file : text open read_mode is "riscvtest.txt";
+        file text_file : text open read_mode is "riscvtest.txt"; -- Program in riscvtest.txt
         variable text_line : line;
         variable ram_content : ramtype;
         variable i : integer := 0;

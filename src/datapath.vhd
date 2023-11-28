@@ -30,7 +30,7 @@ architecture struct of datapath is
             a, b : in std_logic_vector(31 downto 0);
             y : out std_logic_vector(31 downto 0));
     end component;
-    component mux2
+    component mux2x1
     generic (
         width : integer
         );
@@ -40,7 +40,7 @@ architecture struct of datapath is
             y : out std_logic_vector(width-1 downto 0)
         );
     end component;
-    component mux3
+    component mux3x1
     generic (
         width : integer
         );
@@ -80,7 +80,7 @@ begin
     pcreg : flopr generic map(32) port map(clk, reset, PCNext, PC);
     pcadd4 : adder port map(PC, X"00000004", PCPlus4);
     pcaddbranch : adder port map(PC, ImmExt, PCTarget);
-    pcmux : mux2 generic map(
+    pcmux : mux2x1 generic map(
         32) port map(PCPlus4, PCTarget, PCSrc,
         PCNext);
     -- register file logic
@@ -90,11 +90,11 @@ begin
         Result, SrcA, WriteData);
     ext : extend port map(Instr(31 downto 7), ImmSrc, ImmExt);
     -- ALU logic
-    srcbmux : mux2 generic map(
+    srcbmux : mux2x1 generic map(
         32) port map(WriteData, ImmExt,
         ALUSrc, SrcB);
     mainalu : alu port map(SrcA, SrcB, ALUControl, ALUResult, Zero);
-    resultmux : mux3 generic map(
+    resultmux : mux3x1 generic map(
         32) port map(ALUResult, ReadData,
         PCPlus4, ResultSrc,
         Result);

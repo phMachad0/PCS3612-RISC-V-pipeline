@@ -9,13 +9,9 @@ entity mux3x1 is
 end;
 architecture behave of mux3x1 is
 begin
-    process (d0, d1, d2, s) begin
-        if (s = "00") then
-            y <= d0;
-        elsif (s = "01") then
-            y <= d1;
-        elsif (s = "10") then
-            y <= d2;
-        end if;
-    end process;
+    with s select 
+        y <= d0 when "00",
+             d1 when "01",
+             d2 when "10",
+             (others => '-') when others;
 end;

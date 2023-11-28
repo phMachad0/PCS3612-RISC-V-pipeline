@@ -18,7 +18,7 @@ BEGIN
     -- read two ports combinationally (A1/RD1, A2/RD2)
     -- write third PORT ON rising edge OF clock (A3/WD3/WE3)
     -- REGISTER 0 hardwired TO 0
-    PROCESS (clk) 
+    PROCESS (mem, a3, clk) 
     BEGIN
         IF rising_edge(clk) THEN
             IF we3 = '1' THEN
@@ -26,7 +26,7 @@ BEGIN
             END IF;
         END IF;
     END PROCESS;
-    PROCESS (a1, a2) BEGIN
+    PROCESS (mem, a1, a2) BEGIN
         IF (to_integer(unsigned(a1)) = 0) THEN
             rd1 <= X"00000000";
         ELSE

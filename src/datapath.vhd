@@ -77,25 +77,91 @@ architecture struct of datapath is
     signal Result : std_logic_vector(31 downto 0);
 begin
     -- next PC logic
-    pcreg : flopr generic map(32) port map(clk, reset, PCNext, PC);
-    pcadd4 : adder port map(PC, X"00000004", PCPlus4);
-    pcaddbranch : adder port map(PC, ImmExt, PCTarget);
-    pcmux : mux2x1 generic map(
-        32) port map(PCPlus4, PCTarget, PCSrc,
-        PCNext);
+    pcreg : flopr 
+    generic map (
+        width => 32
+    ) 
+    port map (
+        clk => clk, 
+        reset => reset, 
+        d => PCNext, 
+        q => PC
+    );
+    pcadd4 : adder 
+    port map (
+        a => PC, 
+        b => X"00000004", 
+        y => PCPlus4
+    );
+    
+    pcaddbranch : adder 
+    port map (
+        a => PC, 
+        b => ImmExt, 
+        y => PCTarget
+    );
+    
+    pcmux : mux2x1 
+    generic map (
+        width => 32
+    ) 
+    port map (
+        d0 => PCPlus4, 
+        d1 => PCTarget, 
+        s => PCSrc,
+        y => PCNext
+    );
+
     -- register file logic
-    rf : regfile port map(
-        clk, RegWrite, Instr(19 downto 15),
-        Instr(24 downto 20), Instr(11 downto 7),
-        Result, SrcA, WriteData);
-    ext : extend port map(Instr(31 downto 7), ImmSrc, ImmExt);
+    rf : regfile 
+    port map (
+        clk => clk, 
+        we3 => RegWrite, 
+        a1 => Instr(19 downto 15),
+        a2 => Instr(24 downto 20), 
+        a3 => Instr(11 downto 7),
+        wd3 => Result, 
+        rd1 => SrcA, 
+        rd2 => WriteData
+    );
+    
+    ext : extend 
+    port map (
+        instr => Instr(31 downto 7), 
+        immsrc => ImmSrc, 
+        immext => ImmExt
+    );
+    
     -- ALU logic
-    srcbmux : mux2x1 generic map(
-        32) port map(WriteData, ImmExt,
-        ALUSrc, SrcB);
-    mainalu : alu port map(SrcA, SrcB, ALUControl, ALUResult, Zero);
-    resultmux : mux3x1 generic map(
-        32) port map(ALUResult, ReadData,
-        PCPlus4, ResultSrc,
-        Result);
+    srcbmux : mux2x1 
+    generic map (
+        width => 32
+    ) 
+    port map (
+        d0 => WriteData, 
+        d1 => ImmExt,
+        s => ALUSrc, 
+        y => SrcB
+    );
+    
+    mainalu : alu 
+    port map (
+        a => SrcA, 
+        b => SrcB, 
+        ALUControl => ALUControl, 
+        ALUResult => ALUResult, 
+        Zero => Zero
+    );
+
+    resultmux : mux3x1 
+    generic map (
+        width => 32
+    ) 
+    port map (
+        d0 => ALUResult, 
+        d1 => ReadData,
+        d2 => PCPlus4, 
+        s => ResultSrc,
+        y => Result
+    );
 end;

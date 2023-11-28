@@ -6,7 +6,7 @@ ENTITY regfile IS
     PORT (
         clk : IN STD_LOGIC;
         we3 : IN STD_LOGIC;
-        a1, a2, a3 : IN STD_LOGIC_VECTOR(5 DOWNTO 0);
+        a1, a2, a3 : IN STD_LOGIC_VECTOR(4 DOWNTO 0);
         wd3 : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
         rd1, rd2 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0));
 END;

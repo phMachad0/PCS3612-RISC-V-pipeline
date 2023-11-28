@@ -1,7 +1,7 @@
 library IEEE;
-use ieee.std_logic_1164.all;
+use IEEE.std_logic_1164.all;
 
-entity MEMWB is 
+entity memwb is 
 port(
     CLK : in std_logic;
     EN  : in std_logic; -- aqui sempre em 1
@@ -26,6 +26,49 @@ port(
     --saidas de controle
     RegWriteW   : out std_logic;
     ResultSrcW  : out std_logic_vector(1 downto 0)
+
 );
 
-end MEMWB;
+end memwb;
+
+
+architecture reg of memwb is
+    signal  input_concatenado : std_logic_vector (103 downto 0); 
+    signal  output_concatenado : std_logic_vector (103 downto 0); 
+
+    component registrador_d is
+        generic(
+            constant N : integer := 32
+            );
+        port(
+            clock : in std_logic;
+            reset : in std_logic;
+            load : in std_logic;
+            d : in std_logic_vector(N-1 downto 0);
+            q : out std_logic_vector(N-1 downto 0)
+            );
+    end component;
+
+begin
+    input_concatenado <= RegWriteM & ResultSrcM & ALUREsultM & ReadDataM & RdM & PCPlus4M;
+
+    reg1 : registrador_d
+    generic map (
+        N => 104
+    )
+    port map (
+        clock => CLK,
+        reset => CLR,
+        load => EN,
+        d => input_concatenado,
+        q => output_concatenado
+    );
+
+    PCPlus4W <= output_concatenado(31 downto 0);
+    RdW <= output_concatenado(36 downto 32);
+    ReadDataW <= output_concatenado(68 downto 37);
+    ALUResultW <= output_concatenado(100 downto 69);
+    ResultSrcW <= output_concatenado(102 downto 101);
+    RegWriteW <= output_concatenado(103);
+
+end reg;

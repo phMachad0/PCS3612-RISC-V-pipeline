@@ -37,7 +37,7 @@ begin
                         to_integer(unsigned(writedata)) = 25) then
                         report "NO ERRORS: Simulation succeeded" severity
                             failure;
-                    elsif (DataAdr /= 96) then
+                    elsif not (unsigned(DataAdr) = 96) then
                         report "Simulation failed" severity failure;
                     end if;
                 end if;

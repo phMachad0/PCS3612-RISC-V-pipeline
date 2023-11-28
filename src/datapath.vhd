@@ -19,8 +19,8 @@ architecture struct of datapath is
     component flopr generic (width : integer);
         port (
             clk, reset : in std_logic;
-            d : in std_logic_vector(width−1 downto 0);
-            q : out std_logic_vector(width−1 downto 0));
+            d : in std_logic_vector(width-1 downto 0);
+            q : out std_logic_vector(width-1 downto 0));
     end component;
     component adder
         port (
@@ -29,15 +29,15 @@ architecture struct of datapath is
     end component;
     component mux2 generic (width : integer);
         port (
-            d0, d1 : in std_logic_vector(width−1 downto 0);
+            d0, d1 : in std_logic_vector(width-1 downto 0);
             s : in std_logic;
-            y : out std_logic_vector(width−1 downto 0));
+            y : out std_logic_vector(width-1 downto 0));
     end component;
     component mux3 generic (width : integer);
         port (
-            d0, d1, d2 : in std_logic_vector(width−1 downto 0);
+            d0, d1, d2 : in std_logic_vector(width-1 downto 0);
             s : in std_logic_vector(1 downto 0);
-            y : out std_logic_vector(width−1 downto 0));
+            y : out std_logic_vector(width-1 downto 0));
     end component;
     component regfile
         port (

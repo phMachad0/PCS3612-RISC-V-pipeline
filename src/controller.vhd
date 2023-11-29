@@ -1,17 +1,21 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.all;
+
+-- Zero, PCSrc
 entity controller is
     port (
-        op : in std_logic_vector(6 downto 0);
-        funct3 : in std_logic_vector(2 downto 0);
-        funct7b5, Zero : in std_logic;
-        ResultSrc : out std_logic_vector(1 downto 0);
-        MemWrite : out std_logic;
-        PCSrc, ALUSrc : out std_logic;
-        RegWrite : out std_logic;
-        Jump : buffer std_logic;
-        ImmSrc : out std_logic_vector(1 downto 0);
-        ALUControl : out std_logic_vector(2 downto 0));
+        op          : in  std_logic_vector(6 downto 0);
+        funct3      : in  std_logic_vector(2 downto 0);
+        funct7b5    : in  std_logic;
+        ResultSrcD  : out std_logic_vector(1 downto 0);
+        RegWriteD   : out std_logic; 
+        MemWriteD   : out std_logic;
+        JumpD       : buffer std_logic;
+        BranchD     : out std_logic;
+        ALUControlD : out std_logic_vector(2 downto 0);
+        ALUSrcD     : out std_logic;
+        ImmSrcD     : out std_logic_vector(1 downto 0)
+    );
 end;
 architecture struct of controller is
     component maindec
@@ -35,9 +39,26 @@ architecture struct of controller is
     signal ALUOp : std_logic_vector(1 downto 0);
     signal Branch : std_logic;
 begin
-    md : maindec port map(
-        op, ResultSrc, MemWrite, Branch,
-        ALUSrc, RegWrite, Jump, ImmSrc, ALUOp);
-    ad : aludec port map(op(5), funct3, funct7b5, ALUOp, ALUControl);
-    PCSrc <= (Branch and Zero) or Jump;
+    md : maindec 
+    port map (
+        op, 
+        ResultSrcD, 
+        MemWriteD, 
+        BranchD,
+        ALUSrcD, 
+        RegWriteD, 
+        JumpD, 
+        ImmSrcD, 
+        ALUOp
+    );
+    
+    ad : aludec 
+    port map (
+        op(5), 
+        funct3, 
+        funct7b5, 
+        ALUOp, 
+        ALUControlD
+    );
+    -- PCSrc <= (Branch and Zero) or Jump;
 end;

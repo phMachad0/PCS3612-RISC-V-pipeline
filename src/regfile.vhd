@@ -20,7 +20,7 @@ BEGIN
     -- REGISTER 0 hardwired TO 0
     PROCESS (mem, a3, clk) 
     BEGIN
-        IF rising_edge(clk) THEN
+        IF falling_edge(clk) THEN
             IF we3 = '1' THEN
                 mem(to_integer(unsigned(a3))) <= wd3;
             END IF;

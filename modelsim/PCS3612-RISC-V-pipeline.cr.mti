@@ -1,0 +1,196 @@
+C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/mux2x1.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/mux2x1.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux2x1
+-- Compiling architecture behave of mux2x1
+
+} {} {}} C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/regfile.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/regfile.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity regfile
+-- Compiling architecture behave of regfile
+
+} {} {}} C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/mux3x1.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/mux3x1.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux3x1
+-- Compiling architecture behave of mux3x1
+
+} {} {}} C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/flopenr.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/flopenr.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Compiling entity flopenr
+-- Compiling architecture asynchronous of flopenr
+
+} {} {}} C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/testbench.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/testbench.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity testbench
+-- Compiling architecture test of testbench
+
+} {} {}} C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/memwb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/memwb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity memwb
+-- Compiling architecture reg of memwb
+
+} {} {}} C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/adder.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/adder.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity adder
+-- Compiling architecture behave of adder
+
+} {} {}} C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/extend.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/extend.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity extend
+-- Compiling architecture behave of extend
+
+} {} {}} C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/top.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/top.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity top
+-- Compiling architecture test of top
+
+} {} {}} C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/controller.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/controller.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity controller
+-- Compiling architecture struct of controller
+
+} {} {}} C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/aludec.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/aludec.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity aludec
+-- Compiling architecture behave of aludec
+
+} {} {}} C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/datapath.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/datapath.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Compiling entity datapath
+-- Compiling architecture struct of datapath
+
+} {} {}} C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/imem.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/imem.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_textio
+-- Compiling entity imem
+-- Compiling architecture behave of imem
+
+} {} {}} C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/riscvsingle.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/riscvsingle.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity riscvsingle
+-- Compiling architecture struct of riscvsingle
+
+} {} {}} C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/registrador_d.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/registrador_d.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity registrador_d
+-- Compiling architecture behave of registrador_d
+
+} {} {}} C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/maindec.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/maindec.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity maindec
+-- Compiling architecture behave of maindec
+
+} {} {}} C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/alu.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/alu.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity alu
+-- Compiling architecture behave of alu
+
+} {} {}} C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/hazardunit.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/hazardunit.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity hazardunit
+-- Compiling architecture arch of hazardunit
+
+} {} {}} C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/idex.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/idex.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity idex
+-- Compiling architecture reg of idex
+
+} {} {}} C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/dmem.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/dmem.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity dmem
+-- Compiling architecture behave of dmem
+
+} {} {}} C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/flopr.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/flopr.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Compiling entity flopr
+-- Compiling architecture asynchronous of flopr
+
+} {} {}} C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/ifid.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/ifid.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity ifid
+-- Compiling architecture reg of ifid
+
+} {} {}} C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/exmem.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/exmem.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity exmem
+-- Compiling architecture reg of exmem
+
+} {} {}}

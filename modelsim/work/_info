@@ -1,0 +1,976 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_lite/20.1
+Eadder
+Z0 w1701267378
+Z1 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+Z4 dC:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/modelsim
+Z5 8C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/adder.vhd
+Z6 FC:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/adder.vhd
+l0
+L5 1
+Vj6fZzbR:HUfCLVgP@QV9:1
+!s100 l3]1QllCjEe:cZ]ElDalA2
+Z7 OV;C;2020.1;71
+32
+Z8 !s110 1701271687
+!i10b 1
+Z9 !s108 1701271687.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/adder.vhd|
+Z11 !s107 C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/adder.vhd|
+!i113 1
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Abehave
+R1
+R2
+R3
+DEx4 work 5 adder 0 22 j6fZzbR:HUfCLVgP@QV9:1
+!i122 0
+l11
+L10 4
+VCE^3KJ]8Rf5LA:X:^XKEl3
+!s100 ;^ndM3WT`jb;?Kl?M3;3[0
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Ealu
+R0
+R1
+R2
+R3
+!i122 1
+R4
+Z14 8C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/alu.vhd
+Z15 FC:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/alu.vhd
+l0
+L5 1
+VlC`0SG[_U4?T;@PgW5Z3N0
+!s100 ]m31VgjGXM`>DIZR;Ye420
+R7
+32
+R8
+!i10b 1
+R9
+Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/alu.vhd|
+Z17 !s107 C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/alu.vhd|
+!i113 1
+R12
+R13
+Abehave
+R1
+R2
+R3
+DEx4 work 3 alu 0 22 lC`0SG[_U4?T;@PgW5Z3N0
+!i122 1
+l15
+L13 16
+VK2Pk?3_?2hkUO]b6Hd9ZK3
+!s100 liObVj<7ekbj]nM8UH`6E2
+R7
+32
+R8
+!i10b 1
+R9
+R16
+R17
+!i113 1
+R12
+R13
+Ealudec
+R0
+R2
+R3
+!i122 2
+R4
+Z18 8C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/aludec.vhd
+Z19 FC:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/aludec.vhd
+l0
+L3 1
+VB`E2fN7XGWYgi=M7oVX2@3
+!s100 j@KcC3Wg9EWcVD_bEjC4U2
+R7
+32
+R8
+!i10b 1
+R9
+Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/aludec.vhd|
+Z21 !s107 C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/aludec.vhd|
+!i113 1
+R12
+R13
+Abehave
+R2
+R3
+DEx4 work 6 aludec 0 22 B`E2fN7XGWYgi=M7oVX2@3
+!i122 2
+l13
+L11 31
+VkOGB^4WiBc>01``fRL;7D2
+!s100 E_:TeiFKBgRJa5X8jSVi?2
+R7
+32
+R8
+!i10b 1
+R9
+R20
+R21
+!i113 1
+R12
+R13
+Econtroller
+R0
+R2
+R3
+!i122 3
+R4
+Z22 8C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/controller.vhd
+Z23 FC:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/controller.vhd
+l0
+L5 1
+VMBEMn?Eh=9RM2DDfL3jc?2
+!s100 h8Xk1`;B=ROA0MTk=VVOk1
+R7
+32
+R8
+!i10b 1
+R9
+Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/controller.vhd|
+Z25 !s107 C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/controller.vhd|
+!i113 1
+R12
+R13
+Astruct
+R2
+R3
+DEx4 work 10 controller 0 22 MBEMn?Eh=9RM2DDfL3jc?2
+!i122 3
+l41
+L20 45
+V=Yz@H8Gb]9@`OEKeDbVCD2
+!s100 dHRm<H8e^hSGAMD2f_n;D0
+R7
+32
+R8
+!i10b 1
+R9
+R24
+R25
+!i113 1
+R12
+R13
+Edatapath
+R0
+Z26 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+R2
+R3
+!i122 4
+R4
+Z27 8C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/datapath.vhd
+Z28 FC:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/datapath.vhd
+l0
+L4 1
+VRGk8R3bj^5fEaQQbKUUdf1
+!s100 hQ=3gbmGeK^V9PU7Lm_9F1
+R7
+32
+R8
+!i10b 1
+R9
+Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/datapath.vhd|
+Z30 !s107 C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/datapath.vhd|
+!i113 1
+R12
+R13
+Astruct
+R26
+R2
+R3
+DEx4 work 8 datapath 0 22 RGk8R3bj^5fEaQQbKUUdf1
+!i122 4
+l251
+L42 446
+VBdzMW4:7:gjB4cfRX<HSP3
+!s100 EQnRZD5[T`AzMK1n;`eL21
+R7
+32
+R8
+!i10b 1
+R9
+R29
+R30
+!i113 1
+R12
+R13
+Edmem
+R0
+R1
+R2
+R3
+!i122 5
+R4
+Z31 8C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/dmem.vhd
+Z32 FC:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/dmem.vhd
+l0
+L6 1
+V8nDkfBz`[G^HEEKLZZHK_0
+!s100 15iRl]WQ3XMgf_NC4[Hf>3
+R7
+32
+R8
+!i10b 1
+R9
+Z33 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/dmem.vhd|
+Z34 !s107 C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/dmem.vhd|
+!i113 1
+R12
+R13
+Abehave
+R1
+R2
+R3
+DEx4 work 4 dmem 0 22 8nDkfBz`[G^HEEKLZZHK_0
+!i122 5
+l17
+L12 18
+V6b_2^k0nkW6KB;P[2KVJI3
+!s100 _bOo2@S1P9TW]77zMh3z<2
+R7
+32
+R8
+!i10b 1
+R9
+R33
+R34
+!i113 1
+R12
+R13
+Eexmem
+R0
+R2
+R3
+!i122 6
+R4
+Z35 8C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/exmem.vhd
+Z36 FC:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/exmem.vhd
+l0
+L4 1
+VOE^N?;ETaiEN5hn;YP[oB3
+!s100 h[hI]jNkmICQU4IbF_N9@1
+R7
+32
+R8
+!i10b 1
+R9
+Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/exmem.vhd|
+Z38 !s107 C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/exmem.vhd|
+!i113 1
+R12
+R13
+Areg
+R2
+R3
+DEx4 work 5 exmem 0 22 OE^N?;ETaiEN5hn;YP[oB3
+!i122 6
+l56
+L39 41
+V^o6W?fLD^h<ZRDhC@C:DL3
+!s100 >l5POSQbf>^LCDLa=cC2Y1
+R7
+32
+R8
+!i10b 1
+R9
+R37
+R38
+!i113 1
+R12
+R13
+Eextend
+R0
+R2
+R3
+!i122 7
+R4
+Z39 8C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/extend.vhd
+Z40 FC:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/extend.vhd
+l0
+L3 1
+V]Dn?Cj3nUNI@5g?d0^<3a1
+!s100 ><n4X^5d0DhLI?OgQWI3n2
+R7
+32
+R8
+!i10b 1
+R9
+Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/extend.vhd|
+Z42 !s107 C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/extend.vhd|
+!i113 1
+R12
+R13
+Abehave
+R2
+R3
+DEx4 work 6 extend 0 22 ]Dn?Cj3nUNI@5g?d0^<3a1
+!i122 7
+l10
+L9 25
+V9nf1cGHG?F2YiaWmY^k^80
+!s100 jF`K?>XB;E;Aj1BOcX2eo2
+R7
+32
+R8
+!i10b 1
+R9
+R41
+R42
+!i113 1
+R12
+R13
+Eflopenr
+R0
+R26
+R2
+R3
+!i122 8
+R4
+Z43 8C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/flopenr.vhd
+Z44 FC:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/flopenr.vhd
+l0
+L4 1
+V79RzbLG8ILhUc=Z2I[Q^X0
+!s100 hf1czQ9gO>6<]>697kRW]2
+R7
+32
+R8
+!i10b 1
+R9
+Z45 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/flopenr.vhd|
+Z46 !s107 C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/flopenr.vhd|
+!i113 1
+R12
+R13
+Aasynchronous
+R26
+R2
+R3
+DEx4 work 7 flopenr 0 22 79RzbLG8ILhUc=Z2I[Q^X0
+!i122 8
+l12
+Z47 L11 10
+V;nY7>B1;i2J`8bPj]9JA80
+!s100 A=0d[@T1C:6bfdh4i;5352
+R7
+32
+R8
+!i10b 1
+R9
+R45
+R46
+!i113 1
+R12
+R13
+Eflopr
+R0
+R26
+R2
+R3
+!i122 9
+R4
+Z48 8C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/flopr.vhd
+Z49 FC:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/flopr.vhd
+l0
+L4 1
+VkjO4_gYGN;S:<dB`kC]ma0
+!s100 5_i_j;K7Ki38W>mnB3XV43
+R7
+32
+R8
+!i10b 1
+R9
+Z50 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/flopr.vhd|
+Z51 !s107 C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/flopr.vhd|
+!i113 1
+R12
+R13
+Aasynchronous
+R26
+R2
+R3
+DEx4 work 5 flopr 0 22 kjO4_gYGN;S:<dB`kC]ma0
+!i122 9
+l12
+R47
+VMGEG?DkGJUBYWW5PgQF@W3
+!s100 :2ZgF<0Aa7QZk<;U<gj[d2
+R7
+32
+R8
+!i10b 1
+R9
+R50
+R51
+!i113 1
+R12
+R13
+Ehazardunit
+R0
+R2
+R3
+!i122 10
+R4
+Z52 8C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/hazardunit.vhd
+Z53 FC:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/hazardunit.vhd
+l0
+L4 1
+VHdm=7XUI7Kz;gT[SU4WOW1
+!s100 fbz_6Y6[Y2Sz2K13?N^TB3
+R7
+32
+Z54 !s110 1701271688
+!i10b 1
+R9
+Z55 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/hazardunit.vhd|
+Z56 !s107 C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/hazardunit.vhd|
+!i113 1
+R12
+R13
+Aarch
+R2
+R3
+DEx4 work 10 hazardunit 0 22 Hdm=7XUI7Kz;gT[SU4WOW1
+!i122 10
+l30
+L27 19
+VMDYf>S8Y^Fc<aZ3JAe`l`2
+!s100 G:iD;^0X0;Za4[;e`FN2G1
+R7
+32
+R54
+!i10b 1
+R9
+R55
+R56
+!i113 1
+R12
+R13
+Eidex
+R0
+R2
+R3
+!i122 11
+R4
+Z57 8C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/idex.vhd
+Z58 FC:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/idex.vhd
+l0
+L4 1
+VHE7@`KEFz4>VTMAkVeoQi0
+!s100 Ya7@:44APiiDY@0<Xlc@:1
+R7
+32
+R54
+!i10b 1
+Z59 !s108 1701271688.000000
+Z60 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/idex.vhd|
+Z61 !s107 C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/idex.vhd|
+!i113 1
+R12
+R13
+Areg
+R2
+R3
+DEx4 work 4 idex 0 22 HE7@`KEFz4>VTMAkVeoQi0
+!i122 11
+l70
+L53 52
+VFHcGJCJMYeaV7LMTMSWBo2
+!s100 _zgna`bj>^4HCddck5V700
+R7
+32
+R54
+!i10b 1
+R59
+R60
+R61
+!i113 1
+R12
+R13
+Eifid
+R0
+R2
+R3
+!i122 12
+R4
+Z62 8C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/ifid.vhd
+Z63 FC:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/ifid.vhd
+l0
+L4 1
+VEd[gFT^8KdnTdGMg^?3oT1
+!s100 V@O33l<;][S_AG_:LGhfd2
+R7
+32
+R54
+!i10b 1
+R59
+Z64 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/ifid.vhd|
+Z65 !s107 C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/ifid.vhd|
+!i113 1
+R12
+R13
+Areg
+R2
+R3
+DEx4 work 4 ifid 0 22 Ed[gFT^8KdnTdGMg^?3oT1
+!i122 12
+l38
+L21 38
+VV7B:^_aZ?UYVz1P[=4kVn3
+!s100 GknIk=_[6daA<cz[Q7W3P0
+R7
+32
+R54
+!i10b 1
+R59
+R64
+R65
+!i113 1
+R12
+R13
+Eimem
+R0
+Z66 DPx4 ieee 16 std_logic_textio 0 22 ^l:n6VFdg74Q?CKDhjD]D3
+R1
+R2
+R3
+!i122 13
+R4
+Z67 8C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/imem.vhd
+Z68 FC:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/imem.vhd
+l0
+L7 1
+Va3=[DXnaG@e=C5eGoZoc52
+!s100 P2g[QGOh`NXGL<bO27NEn2
+R7
+32
+R54
+!i10b 1
+R59
+Z69 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/imem.vhd|
+Z70 !s107 C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/imem.vhd|
+!i113 1
+R12
+R13
+Abehave
+R66
+R1
+R2
+R3
+DEx4 work 4 imem 0 22 a3=[DXnaG@e=C5eGoZoc52
+!i122 13
+l32
+L12 26
+VNz0<iEZH_ko?;^2iT:@O;0
+!s100 D;=41GRFohiA>;XZP?:PM2
+R7
+32
+R54
+!i10b 1
+R59
+R69
+R70
+!i113 1
+R12
+R13
+Emaindec
+R0
+R2
+R3
+!i122 14
+R4
+Z71 8C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/maindec.vhd
+Z72 FC:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/maindec.vhd
+l0
+L3 1
+VKYC@a2l17nhLeT1WK]P@[0
+!s100 2k?i69o1o925O_U@<Y;Dg0
+R7
+32
+R54
+!i10b 1
+R59
+Z73 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/maindec.vhd|
+Z74 !s107 C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/maindec.vhd|
+!i113 1
+R12
+R13
+Abehave
+R2
+R3
+DEx4 work 7 maindec 0 22 KYC@a2l17nhLeT1WK]P@[0
+!i122 14
+l15
+L13 25
+Vg5bSoWX[9[e3C2Z`TVlfZ3
+!s100 05WRTZ2<AV:L_:Ck8SBHK3
+R7
+32
+R54
+!i10b 1
+R59
+R73
+R74
+!i113 1
+R12
+R13
+Ememwb
+R0
+R2
+R3
+!i122 15
+R4
+Z75 8C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/memwb.vhd
+Z76 FC:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/memwb.vhd
+l0
+L4 1
+V>Nb2@igc9mYzJSLRoGbON3
+!s100 E_4Cam>LU`TagSjifmIF=3
+R7
+32
+R54
+!i10b 1
+R59
+Z77 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/memwb.vhd|
+Z78 !s107 C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/memwb.vhd|
+!i113 1
+R12
+R13
+Areg
+R2
+R3
+DEx4 work 5 memwb 0 22 >Nb2@igc9mYzJSLRoGbON3
+!i122 15
+l52
+L35 40
+V`8dcgCn1@bOd=jbfhW<GN1
+!s100 O2dhRN^F7ee?`[3XonnD[1
+R7
+32
+R54
+!i10b 1
+R59
+R77
+R78
+!i113 1
+R12
+R13
+Emux2x1
+R0
+R2
+R3
+!i122 16
+R4
+Z79 8C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/mux2x1.vhd
+Z80 FC:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/mux2x1.vhd
+l0
+L3 1
+VgPkbZXTIzm4:RlE;Z0a=;0
+!s100 `ecOM2XYM5N3oNB9bK>A03
+R7
+32
+R54
+!i10b 1
+R59
+Z81 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/mux2x1.vhd|
+Z82 !s107 C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/mux2x1.vhd|
+!i113 1
+R12
+R13
+Abehave
+R2
+R3
+DEx4 work 6 mux2x1 0 22 gPkbZXTIzm4:RlE;Z0a=;0
+!i122 16
+l11
+L10 5
+VIAPSgaWRoPmN;F@VKz?N@0
+!s100 PkU^4AjbFJa_hno^[DimO1
+R7
+32
+R54
+!i10b 1
+R59
+R81
+R82
+!i113 1
+R12
+R13
+Emux3x1
+Z83 w1701267405
+R2
+R3
+!i122 17
+R4
+Z84 8C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/mux3x1.vhd
+Z85 FC:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/mux3x1.vhd
+l0
+L3 1
+V^Q3dh<d=8mQHKUYVUfP413
+!s100 GKGFTX1W0jCTn4^:Y=Ccz2
+R7
+32
+R54
+!i10b 1
+R59
+Z86 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/mux3x1.vhd|
+Z87 !s107 C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/mux3x1.vhd|
+!i113 1
+R12
+R13
+Abehave
+R2
+R3
+DEx4 work 6 mux3x1 0 22 ^Q3dh<d=8mQHKUYVUfP413
+!i122 17
+l11
+L10 8
+V8LJmB2f8i<Xb[NBKPzV;X2
+!s100 Aed82QAD^OhLFN1N1C@8N0
+R7
+32
+R54
+!i10b 1
+R59
+R86
+R87
+!i113 1
+R12
+R13
+Eregfile
+R0
+R1
+R2
+R3
+!i122 18
+R4
+Z88 8C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/regfile.vhd
+Z89 FC:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/regfile.vhd
+l0
+L5 1
+V5^J@:UBadcEllDiZ2MAno3
+!s100 RcG]RIC@mDKnI;U>]N6;i3
+R7
+32
+R54
+!i10b 1
+R59
+Z90 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/regfile.vhd|
+Z91 !s107 C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/regfile.vhd|
+!i113 1
+R12
+R13
+Abehave
+R1
+R2
+R3
+DEx4 work 7 regfile 0 22 5^J@:UBadcEllDiZ2MAno3
+!i122 18
+l16
+L13 29
+VLLa;ajo@c_6lK5;Tj9z361
+!s100 fnU?MNeVL88Gd[IA@2n9c3
+R7
+32
+R54
+!i10b 1
+R59
+R90
+R91
+!i113 1
+R12
+R13
+Eregistrador_d
+R0
+R2
+R3
+!i122 19
+R4
+Z92 8C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/registrador_d.vhd
+Z93 FC:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/registrador_d.vhd
+l0
+L4 1
+VJ`nlg`RNXczdi[XWPjJcA1
+!s100 jT6US7eOz6NCBdfk^5lRL1
+R7
+32
+R54
+!i10b 1
+R59
+Z94 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/registrador_d.vhd|
+Z95 !s107 C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/registrador_d.vhd|
+!i113 1
+R12
+R13
+Abehave
+R2
+R3
+DEx4 work 13 registrador_d 0 22 J`nlg`RNXczdi[XWPjJcA1
+!i122 19
+l18
+L17 11
+VEQ_GPl<>?4bjMcCz]mH`32
+!s100 8^oj<[UA`2GDeFjB[KzMT2
+R7
+32
+R54
+!i10b 1
+R59
+R94
+R95
+!i113 1
+R12
+R13
+Eriscvsingle
+R0
+R2
+R3
+!i122 20
+R4
+Z96 8C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/riscvsingle.vhd
+Z97 FC:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/riscvsingle.vhd
+l0
+L4 1
+VO9CQ?O;;gN1Z?0`li>?_11
+!s100 8OCmZ]@`BMML8Yjfl7j`F1
+R7
+32
+R54
+!i10b 1
+R59
+Z98 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/riscvsingle.vhd|
+Z99 !s107 C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/riscvsingle.vhd|
+!i113 1
+R12
+R13
+Astruct
+R2
+R3
+DEx4 work 11 riscvsingle 0 22 O9CQ?O;;gN1Z?0`li>?_11
+!i122 20
+l103
+L17 161
+V]iD>c8<KcN39il:jCP5BM1
+!s100 VDhUkKRVzgGZgZVRRnhZC1
+R7
+32
+R54
+!i10b 1
+R59
+R98
+R99
+!i113 1
+R12
+R13
+Etestbench
+R0
+R1
+R2
+R3
+!i122 21
+R4
+Z100 8C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/testbench.vhd
+Z101 FC:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/testbench.vhd
+l0
+L5 1
+V6G00OJ59nP3GYZe6m[;]G1
+!s100 MXk:=:h^bS:kgAElgMHh:0
+R7
+32
+Z102 !s110 1701271689
+!i10b 1
+R59
+Z103 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/testbench.vhd|
+Z104 !s107 C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/testbench.vhd|
+!i113 1
+R12
+R13
+Atest
+R1
+R2
+R3
+DEx4 work 9 testbench 0 22 6G00OJ59nP3GYZe6m[;]G1
+!i122 21
+l16
+L7 39
+V@CXAHO71h`Y4`h`dYzM<23
+!s100 ^]RGFh6kHZaaBZWk18kBc1
+R7
+32
+R102
+!i10b 1
+R59
+R103
+R104
+!i113 1
+R12
+R13
+Etop
+R0
+R1
+R2
+R3
+!i122 22
+R4
+Z105 8C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/top.vhd
+Z106 FC:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/top.vhd
+l0
+L5 1
+Vn<FFGFAlTPlldnVF0ETnX2
+!s100 jLBEV5^m30`6fMICJ9Uhk0
+R7
+32
+R102
+!i10b 1
+Z107 !s108 1701271689.000000
+Z108 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/top.vhd|
+!s107 C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/top.vhd|
+!i113 1
+R12
+R13
+Atest
+R1
+R2
+R3
+DEx4 work 3 top 0 22 n<FFGFAlTPlldnVF0ETnX2
+!i122 22
+l47
+L15 61
+VbXU6e[JZIjn1nicgBP=:P1
+!s100 d=AX5k53aobn96O_=DVO<3
+R7
+32
+R102
+!i10b 1
+R107
+R108
+Z109 !s107 C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/top.vhd|
+!i113 1
+R12
+R13

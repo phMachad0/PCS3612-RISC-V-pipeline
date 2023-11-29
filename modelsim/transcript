@@ -1,0 +1,221 @@
+# Compile of adder.vhd was successful.
+# Compile of alu.vhd was successful.
+# Compile of aludec.vhd was successful.
+# Compile of controller.vhd was successful.
+# Compile of datapath.vhd was successful.
+# Compile of dmem.vhd was successful.
+# Compile of exmem.vhd was successful.
+# Compile of extend.vhd was successful.
+# Compile of flopenr.vhd was successful.
+# Compile of flopr.vhd was successful.
+# Compile of hazardunit.vhd was successful.
+# Compile of idex.vhd was successful.
+# Compile of ifid.vhd was successful.
+# Compile of imem.vhd was successful.
+# Compile of maindec.vhd was successful.
+# Compile of memwb.vhd was successful.
+# Compile of mux2x1.vhd was successful.
+# Compile of mux3x1.vhd was successful.
+# Compile of regfile.vhd was successful.
+# Compile of registrador_d.vhd was successful.
+# Compile of riscvsingle.vhd was successful.
+# Compile of testbench.vhd was successful.
+# Compile of top.vhd was successful.
+# 23 compiles, 0 failed with no errors.
+vsim -gui work.testbench
+# vsim -gui work.testbench 
+# Start time: 12:28:18 on Nov 29,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.testbench(test)
+# Loading work.top(test)
+# Loading work.riscvsingle(struct)
+# Loading work.controller(struct)
+# Loading work.maindec(behave)
+# Loading work.aludec(behave)
+# Loading ieee.std_logic_arith(body)
+# Loading work.datapath(struct)
+# Loading work.mux2x1(behave)
+# Loading work.flopenr(asynchronous)
+# Loading work.adder(behave)
+# Loading work.ifid(reg)
+# Loading work.registrador_d(behave)
+# Loading work.regfile(behave)
+# Loading work.extend(behave)
+# Loading work.idex(reg)
+# Loading work.mux3x1(behave)
+# Loading work.alu(behave)
+# Loading work.exmem(reg)
+# Loading work.memwb(reg)
+# Loading work.hazardunit(arch)
+# Loading ieee.std_logic_textio(body)
+# Loading work.imem(behave)
+# Loading work.dmem(behave)
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint  \
+sim:/testbench/clk \
+sim:/testbench/reset
+add wave -position insertpoint  \
+sim:/testbench/dut/imem1/a \
+sim:/testbench/dut/imem1/rd \
+sim:/testbench/dut/imem1/mem
+add wave -position insertpoint  \
+sim:/testbench/dut/dmem1/we \
+sim:/testbench/dut/dmem1/a \
+sim:/testbench/dut/dmem1/wd \
+sim:/testbench/dut/dmem1/rd \
+sim:/testbench/dut/dmem1/mem
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/dmem1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/imem1
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/rvsingle/dp/mainalu
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/rvsingle/dp/rf
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/rvsingle/dp/rf
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/dut/dmem1
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/dut/rvsingle/dp/mainalu
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 2  Instance: /testbench/dut/rvsingle/dp/mainalu
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 3  Instance: /testbench/dut/rvsingle/dp/mainalu
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 5 ns  Iteration: 1  Instance: /testbench/dut/dmem1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 1  Instance: /testbench/dut/dmem1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 3  Instance: /testbench/dut/dmem1
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 10 ns  Iteration: 4  Instance: /testbench/dut/rvsingle/dp/mainalu
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 1  Instance: /testbench/dut/dmem1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20 ns  Iteration: 1  Instance: /testbench/dut/dmem1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 25 ns  Iteration: 1  Instance: /testbench/dut/dmem1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 30 ns  Iteration: 1  Instance: /testbench/dut/dmem1
+# ** Failure: NO ERRORS: Simulation succeeded
+#    Time: 275 ns  Iteration: 1  Process: /testbench/line__34 File: C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/testbench.vhd
+# Break in Process line__34 at C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/testbench.vhd line 38
+add wave -position insertpoint  \
+sim:/testbench/dut/rvsingle/RegWriteD \
+sim:/testbench/dut/rvsingle/MemWriteD \
+sim:/testbench/dut/rvsingle/JumpD \
+sim:/testbench/dut/rvsingle/BranchD \
+sim:/testbench/dut/rvsingle/ALUSrcD \
+sim:/testbench/dut/rvsingle/StallF \
+sim:/testbench/dut/rvsingle/StallD \
+sim:/testbench/dut/rvsingle/FlushD \
+sim:/testbench/dut/rvsingle/FlushE \
+sim:/testbench/dut/rvsingle/PCSrcE \
+sim:/testbench/dut/rvsingle/ResultSrcE0 \
+sim:/testbench/dut/rvsingle/RegWriteM \
+sim:/testbench/dut/rvsingle/RegWriteW \
+sim:/testbench/dut/rvsingle/ResultSrcD \
+sim:/testbench/dut/rvsingle/ImmSrcD \
+sim:/testbench/dut/rvsingle/ForwardAE \
+sim:/testbench/dut/rvsingle/ForwardBE \
+sim:/testbench/dut/rvsingle/ALUControlD \
+sim:/testbench/dut/rvsingle/Rs1D \
+sim:/testbench/dut/rvsingle/Rs2D \
+sim:/testbench/dut/rvsingle/Rs1E \
+sim:/testbench/dut/rvsingle/Rs2E \
+sim:/testbench/dut/rvsingle/RdM \
+sim:/testbench/dut/rvsingle/RdW \
+sim:/testbench/dut/rvsingle/RdE \
+sim:/testbench/dut/rvsingle/InstrD
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/dmem1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/imem1
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/rvsingle/dp/mainalu
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/rvsingle/dp/rf
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/rvsingle/dp/rf
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/dut/dmem1
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/dut/rvsingle/dp/mainalu
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 2  Instance: /testbench/dut/rvsingle/dp/mainalu
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 3  Instance: /testbench/dut/rvsingle/dp/mainalu
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 5 ns  Iteration: 1  Instance: /testbench/dut/dmem1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 1  Instance: /testbench/dut/dmem1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 3  Instance: /testbench/dut/dmem1
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 10 ns  Iteration: 4  Instance: /testbench/dut/rvsingle/dp/mainalu
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 1  Instance: /testbench/dut/dmem1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20 ns  Iteration: 1  Instance: /testbench/dut/dmem1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 25 ns  Iteration: 1  Instance: /testbench/dut/dmem1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 30 ns  Iteration: 1  Instance: /testbench/dut/dmem1
+# ** Failure: NO ERRORS: Simulation succeeded
+#    Time: 275 ns  Iteration: 1  Process: /testbench/line__34 File: C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/testbench.vhd
+# Break in Process line__34 at C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/testbench.vhd line 38
+add wave -position insertpoint  \
+sim:/testbench/dut/rvsingle/co/op
+add wave -position insertpoint  \
+sim:/testbench/dut/rvsingle/co/md/controls
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/dmem1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/imem1
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/rvsingle/dp/mainalu
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/rvsingle/dp/rf
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/rvsingle/dp/rf
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/dut/dmem1
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /testbench/dut/rvsingle/dp/mainalu
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 2  Instance: /testbench/dut/rvsingle/dp/mainalu
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 3  Instance: /testbench/dut/rvsingle/dp/mainalu
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 5 ns  Iteration: 1  Instance: /testbench/dut/dmem1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 1  Instance: /testbench/dut/dmem1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 3  Instance: /testbench/dut/dmem1
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 10 ns  Iteration: 4  Instance: /testbench/dut/rvsingle/dp/mainalu
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 ns  Iteration: 1  Instance: /testbench/dut/dmem1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20 ns  Iteration: 1  Instance: /testbench/dut/dmem1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 25 ns  Iteration: 1  Instance: /testbench/dut/dmem1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 30 ns  Iteration: 1  Instance: /testbench/dut/dmem1
+# ** Failure: NO ERRORS: Simulation succeeded
+#    Time: 275 ns  Iteration: 1  Process: /testbench/line__34 File: C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/testbench.vhd
+# Break in Process line__34 at C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/src/testbench.vhd line 38
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/rault/OneDrive/Documents/USP/MA2/OAC/EP3/PCS3612-RISC-V-pipeline/modelsim/toplevelSimulation.do
+# End time: 13:24:46 on Nov 29,2023, Elapsed time: 0:56:28
+# Errors: 1, Warnings: 18

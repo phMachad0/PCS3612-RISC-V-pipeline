@@ -1,45 +1,41 @@
-library ieee;
-use     ieee.std_logic_1164.all;
-use     ieee.math_real.all;
-use     ieee.numeric_std.all;
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.NUMERIC_STD.ALL;
 
-entity regfile is
-    generic(
-        reg_n  : natural := 10;
-        word_s : natural := 64
-    );
-    port(
-        clock        : in  std_logic;
-        reset        : in  std_logic;
-        regWrite     : in  std_logic;
-        rr1, rr2, wr : in  std_logic_vector(natural(ceil(log2(real(reg_n))))-1 downto 0);
-        d            : in  std_logic_vector(word_s-1 downto 0);
-        q1, q2       : out std_logic_vector(word_s-1 downto 0)
-    );
-end regfile;
-architecture behave of regfile is
-    type registerControl is array (reg_n-1 downto 0) of std_logic_vector(word_s-1 downto 0);
-    signal registerQs : registerControl;
-    signal wrArray : std_logic_vector(reg_n-1 downto 0);
-    component dataRegister
-        generic(
-            word_s : natural := 64;
-            reset_value : natural := 0
-        );
-        port(
-            clock, reset, load : in std_logic;
-            d : in std_logic_vector(word_s-1 downto 0);
-            q : out std_logic_vector(word_s-1 downto 0)
-        );
-	end component;
-    begin
-        lastReg : dataRegister generic map(word_s)
-                          port map (clock, reset, '0', d, registerQs(reg_n-1));
-        regGen : for i in reg_n-2 downto 0 generate
-			Reg_i : dataRegister generic map(word_s)
-            port map (clock, reset, regWrite, d, registerQs(i));
-        end generate;
-
-        
-    
-end behave;
+ENTITY regfile IS
+    PORT (
+        clk : IN STD_LOGIC;
+        we3 : IN STD_LOGIC;
+        a1, a2, a3 : IN STD_LOGIC_VECTOR(4 DOWNTO 0);
+        wd3 : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+        rd1, rd2 : OUT STD_LOGIC_VECTOR(31 DOWNTO 0));
+END;
+ARCHITECTURE behave OF regfile IS
+    TYPE ramtype IS ARRAY (31 DOWNTO 0) OF STD_LOGIC_VECTOR(31 DOWNTO 0);
+    SIGNAL mem : ramtype := (others => (others => '0'));
+BEGIN
+    -- three ported REGISTER FILE
+    -- read two ports combinationally (A1/RD1, A2/RD2)
+    -- write third PORT ON rising edge OF clock (A3/WD3/WE3)
+    -- REGISTER 0 hardwired TO 0
+    PROCESS (mem, a3, clk) 
+    BEGIN
+        IF falling_edge(clk) THEN
+            IF we3 = '1' THEN
+                mem(to_integer(unsigned(a3))) <= wd3;
+            END IF;
+        END IF;
+    END PROCESS;
+    PROCESS (mem, a1, a2) BEGIN
+        IF (to_integer(unsigned(a1)) = 0) THEN
+            rd1 <= X"00000000";
+        ELSE
+            rd1 <= mem(to_integer(unsigned(a1)));
+        END IF;
+        IF (to_integer(unsigned(a2)) = 0) THEN
+            rd2 <= X"00000000";
+        ELSE
+            rd2 <= mem(to_integer(unsigned(a2)));
+        END IF;
+    END PROCESS;
+END;

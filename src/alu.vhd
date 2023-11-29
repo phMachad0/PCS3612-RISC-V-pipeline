@@ -1,59 +1,28 @@
--- Disclaimer: ALU had 97% score on automated judge
--- 
--- S signal:
--- 0 -> AND
--- 1 -> OR
--- 2 -> SUM
--- 6 -> SUB
--- 7 -> SLT
--- C -> NOT (A OR B)
-library ieee;
-use ieee.std_logic_1164.all;
-use ieee.numeric_std.all;
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+use IEEE.NUMERIC_STD.all;
 
-entity alu is 
-    generic (
-        size : natural := 64
-    );
+entity alu is
     port (
-        A, B : in std_logic_vector(size-1 downto 0);
-        F : out std_logic_vector(size-1 downto 0);
-        S : in std_logic_vector(3 downto 0);
-        Z : out std_logic;
-        Ov : out std_logic;
-        Co : out std_logic
-    );
-end alu;
+        a, b : in std_logic_vector(31 downto 0);
+        ALUControl : in std_logic_vector(2 downto 0);
+        ALUResult : buffer std_logic_vector(31 downto 0);
+        Zero : out std_logic
+        );
+end;
 architecture behave of alu is
-	signal F_SIG, F_SUM, SLT_SIG, B_SIG : std_logic_vector(size-1 downto 0);
-	signal SUBTRACT : std_logic;
-
-	component vectoradder
-		generic (size: natural := 8);
-		port(
-			A, B  : in  std_logic_vector(size - 1 downto 0);
-			Cin   : in  std_logic;
-			F     : out std_logic_vector(size - 1 downto 0);
-			Co, Ov: out std_logic
-		);
-	end component;
-
-    begin
-		SLT_SIG <= (0 => F_SUM(size-1), others => '0');
-		subtract <= '1' when (S = "0110" or S = "0111") else '0';
-		B_SIG <= not B when subtract = '1' else B;
-
-		somador : vectoradder
-			generic map(size)
-			port map (A, B_SIG, S(2), F_SUM, Co, Ov);
-
-        F <= F_SIG;
-        with S select
-            F_SIG <= A and B		when "0000",
-                     A or  B		when "0001",
-                     F_SUM 			when "0010", -- A Plus B
-                     F_SUM 			when "0110", -- A Minus B (analog to A Plus !B Plus 1)
-                     SLT_SIG		when "0111",
-                     not (A or B)	when others; --Originally 1100
-		Z <= '1' when to_integer(signed(F_SIG)) = 0 else '0';
-end behave;
+    signal s_slt : std_logic_vector(31 downto 0);
+begin
+    s_slt <= "00000000000000000000000000000001" when signed(a) < signed(b) else "00000000000000000000000000000000";
+    
+    with ALUControl select
+    ALUResult <= std_logic_vector(signed(a) + signed(b)) when "000",
+                  std_logic_vector(signed(a) - signed(b)) when "001",
+                  a and b when "010",
+                  a or b when "011",
+                  a xor b when "100",
+                  s_slt when "101",
+                  "--------------------------------" when others;
+    
+    Zero <= '1' when ALUResult = "00000000000000000000000000000000" else '0';
+end;
